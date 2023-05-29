@@ -23,4 +23,6 @@ public class Usuario {
     private Direccion direccion;
 //    private int idDireccion;
     private boolean isAdmin;
+    private String email;
+    private String clave;
 }
