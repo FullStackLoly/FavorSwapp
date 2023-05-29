@@ -27,6 +27,8 @@ create table direcciones (
     fecha_nacimiento DATETIME,
     id_direccion INT (4),
     is_Admin BOOLEAN DEFAULT 0,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    clave VARCHAR(50) NOT NULL,
     -- Este campo id_provincias hace referencia a la id de provincias
     FOREIGN KEY (id_direccion) REFERENCES direcciones (id)
     ) ENGINE = InnoDB;
