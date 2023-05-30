@@ -54,3 +54,10 @@ VALUES ('00', ''), /*Como es obligatorio algún valor, por si no sabe la provinc
        ('51', 'Ceuta'),
        ('52', 'Melilla'),
        ('99', 'Internacional');
+
+INSERT INTO direcciones (direccion, id_provincia)
+    VALUES ('Calle Málaga', '29'),
+           ('Calle Cordoba', '29');
+
+INSERT INTO usuarios (nombre, apellido1, apellido2, fecha_nacimiento, id_direccion,is_Admin, email, clave)
+VALUES ('Pepe','Lopez','Lopez','2000-10-10',1,true,'pepe@hotmail.com','123456');
