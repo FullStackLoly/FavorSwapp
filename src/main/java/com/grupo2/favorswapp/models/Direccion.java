@@ -3,10 +3,12 @@ package com.grupo2.favorswapp.models;
 import jakarta.persistence.*;
 import lombok.*;
 
+/**
+ * Modelo de la tabla direcciones
+ */
 @NoArgsConstructor @AllArgsConstructor
 @Getter @Setter
 @ToString
-
 @Entity
 @Table(name = "direcciones")
 public class Direccion {

@@ -5,10 +5,12 @@ import lombok.*;
 
 import java.time.LocalDateTime;
 
+/**
+ * Modelo de la tabla usuarios
+ */
 @NoArgsConstructor @AllArgsConstructor
 @Getter @Setter
 @ToString
-
 @Entity
 @Table(name = "usuarios")
 public class Usuario {
