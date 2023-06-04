@@ -1,4 +1,5 @@
- DROP DATABASE IF EXISTS favorSwapp;
+-- crea la base de datos, la borra previamente si ya existia
+DROP DATABASE IF EXISTS favorSwapp;
  create database favorSwapp;
 
  use favorSwapp;
