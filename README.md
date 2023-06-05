@@ -29,7 +29,7 @@ FavorSwapp es compatible con:
 
 A través de ``Postman``, tenemos la documentación del CRUD, o "las tripas" de cómo nuestra aplicación interactúa entre el BackEnd y el FrontEnd con las consultas a la Base de Datos FavorSwapp. Si quieres verla, [pincha aquí](https://documenter.getpostman.com/view/27597286/2s93sW7unw)
 
-Continuará con el FrontEnd...
+Continuará...
 
 
 
