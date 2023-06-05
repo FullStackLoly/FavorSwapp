@@ -18,4 +18,18 @@ FavorSwapp es compatible con:
 * Videoconsolas.
 
 
-## Herramientas de desarrollo usadas...(Continúa la implementación del README)
+## Herramientas de desarrollo usadas
+
+* Spring Boot (Java).
+* Angular.
+* MariaDB.
+* Xampp.
+* Postman.
+* BootStrap.
+
+A través de ``Postman``, tenemos la documentación del CRUD, o "las tripas" de cómo nuestra aplicación interactúa entre el BackEnd y el FrontEnd con las consultas a la Base de Datos FavorSwapp. Si quieres verla, [pincha aquí](https://documenter.getpostman.com/view/27597286/2s93sW7unw)
+
+Continuará...
+
+
+
