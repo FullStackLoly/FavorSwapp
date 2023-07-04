@@ -18,4 +18,9 @@ public class ProvinciaServiceImpl implements ProvinciaService{
     public List<Provincia> obtenerTodasProvincias() {
         return provinciaRepo.findAll() ;
     }
+
+    @Override
+    public Provincia obtenerProvincia(String id) {
+        return provinciaRepo.findById(id).orElse(null);
+    }
 }
