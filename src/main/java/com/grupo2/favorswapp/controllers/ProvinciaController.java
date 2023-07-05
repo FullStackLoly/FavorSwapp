@@ -1,11 +1,9 @@
 package com.grupo2.favorswapp.controllers;
 
+import com.grupo2.favorswapp.models.Favor;
 import com.grupo2.favorswapp.models.Provincia;
 import com.grupo2.favorswapp.service.ProvinciaService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,4 +27,8 @@ public class ProvinciaController {
         return provinciaService.obtenerProvincia(id);
     }
 
+    @PostMapping("/provincias")
+    public void guardarProvincia(@RequestBody Provincia provincia){
+        provinciaService.guardarProvincia(provincia);
+    }
 }

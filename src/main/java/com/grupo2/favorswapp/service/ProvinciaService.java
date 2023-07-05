@@ -10,4 +10,5 @@ import java.util.List;
 public interface ProvinciaService {
     public List<Provincia> obtenerTodasProvincias();
     public Provincia obtenerProvincia(String id);
+    public void guardarProvincia(Provincia provincia);
 }

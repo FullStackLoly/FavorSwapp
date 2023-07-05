@@ -23,4 +23,8 @@ public class ProvinciaServiceImpl implements ProvinciaService{
     public Provincia obtenerProvincia(String id) {
         return provinciaRepo.findById(id).orElse(null);
     }
+    @Override
+    public void guardarProvincia(Provincia provincia){
+        provinciaRepo.save(provincia);
+    }
 }
