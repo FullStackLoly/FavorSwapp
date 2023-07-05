@@ -25,14 +25,24 @@ create table direcciones (
     nombre VARCHAR(25) NOT NULL,
     apellido1 VARCHAR(25) NOT NULL,
     apellido2 VARCHAR(25),
+    telefono VARCHAR(9),
     fecha_nacimiento DATETIME,
     id_direccion INT (4),
-    is_Admin BOOLEAN DEFAULT 0,
     email VARCHAR(50) NOT NULL UNIQUE,
     clave VARCHAR(50) NOT NULL,
-    -- Este campo id_provincias hace referencia a la id de provincias
     FOREIGN KEY (id_direccion) REFERENCES direcciones (id)
     ) ENGINE = InnoDB;
 
-
+-- Tabla favores
+create table favores (
+    id INT (5) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    foto VARCHAR(200),
+    id_usuario INT(4),
+    fumar boolean,
+    internet boolean,
+    mascota boolean,
+    climatizacion boolean,
+    adaptado_movilidad_reducida boolean,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios (id)
+) ENGINE = InnoDB;
 

@@ -11,22 +11,22 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
-public class ProvinciaController {
-    private final ProvinciaService provinciaService;
+public class FavorController {
+    private final FavorController favorController;
 
 
-    public ProvinciaController(ProvinciaService provinciaService) {
-        this.provinciaService = provinciaService;
+    public FavorController(FavorController favorController) {
+        this.favorController = favorController;
     }
 
-    @GetMapping("/provincias")
+    @GetMapping("/favores")
     public List<Provincia> obtenerTodas(){
-        return provinciaService.obtenerTodasProvincias();
+        return favorController.obtenerTodas();
     }
 
-    @GetMapping("/provincias/{id}")
+    @GetMapping("/favores/{id}")
     public Provincia obtenerProvincia(@PathVariable String id){
-        return provinciaService.obtenerProvincia(id);
+        return favorController.;
     }
 
 }

@@ -62,7 +62,21 @@ VALUES ('Calle Málaga', '29'),
        ('Calle Marques de Larios', '29');
 
 /* Contenido de la tabla usuarios */
-INSERT INTO usuarios (nombre, apellido1, apellido2, fecha_nacimiento, id_direccion,is_Admin, email, clave)
-VALUES ('Pepe','Lopez','Lopez','2000-10-10',1,true,'pepe@hotmail.com','123456'),
-       ('Juan','Martín','Garcia','1990-05-12',2,false,'juan@hotmail.com','654321'),
-       ('Antonio','Perez','Perez','1999-01-20',3,false,'antonio@hotmail.com','112233');
+INSERT INTO usuarios (nombre, apellido1, apellido2, telefono, fecha_nacimiento, id_direccion, email, clave)
+VALUES ('Pepe','Lopez','Lopez','656111111','2000-10-10',1,'pepe@hotmail.com','123456'),
+       ('Juan','Martín','Garcia','656222222','1990-05-12',2,'juan@hotmail.com','654321'),
+       ('Antonio','Perez','Perez','656333333','1999-01-20',3,'antonio@hotmail.com','112233');
+
+INSERT INTO favores (foto, id_usuario, fumar, internet, mascota, climatizacion, adaptado_movilidad_reducida)
+VALUES ('https://img.freepik.com/psd-gratis/vista-frontal-habitacion-cama-moderna-maqueta-mesas-noche-madera_176382-1962.jpg?w=740&t=st=1688553891~exp=1688554491~hmac=18de766296199b91a3f1682f85f965a56d15270390ddc954b12f1a629c9e058c'
+        ,1,true,false,false,false,false),
+       ('https://img.freepik.com/psd-gratis/vista-frontal-habitacion-cama-moderna-maqueta-mesas-noche-madera_176382-1962.jpg?w=740&t=st=1688553891~exp=1688554491~hmac=18de766296199b91a3f1682f85f965a56d15270390ddc954b12f1a629c9e058c'
+        ,1,false,false,false,false,false),
+       ('https://img.freepik.com/psd-gratis/vista-frontal-habitacion-cama-moderna-maqueta-mesas-noche-madera_176382-1962.jpg?w=740&t=st=1688553891~exp=1688554491~hmac=18de766296199b91a3f1682f85f965a56d15270390ddc954b12f1a629c9e058c'
+        ,1,true,true,false,false,false),
+       ('https://img.freepik.com/psd-gratis/vista-frontal-habitacion-cama-moderna-maqueta-mesas-noche-madera_176382-1962.jpg?w=740&t=st=1688553891~exp=1688554491~hmac=18de766296199b91a3f1682f85f965a56d15270390ddc954b12f1a629c9e058c'
+        ,1,false,false,true,false,false),
+       ('https://img.freepik.com/psd-gratis/vista-frontal-habitacion-cama-moderna-maqueta-mesas-noche-madera_176382-1962.jpg?w=740&t=st=1688553891~exp=1688554491~hmac=18de766296199b91a3f1682f85f965a56d15270390ddc954b12f1a629c9e058c'
+        ,1,false,false,false,true,false),
+       ('https://img.freepik.com/psd-gratis/vista-frontal-habitacion-cama-moderna-maqueta-mesas-noche-madera_176382-1962.jpg?w=740&t=st=1688553891~exp=1688554491~hmac=18de766296199b91a3f1682f85f965a56d15270390ddc954b12f1a629c9e058c'
+        ,1,false,false,false,false,true);
