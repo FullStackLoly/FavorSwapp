@@ -37,6 +37,8 @@ create table direcciones (
 create table favores (
     id INT (5) AUTO_INCREMENT NOT NULL PRIMARY KEY,
     foto VARCHAR(200),
+    descripcion VARCHAR(20),
+    direccion VARCHAR(50),
     id_usuario INT(4),
     fumar boolean,
     internet boolean,

@@ -17,6 +17,8 @@ public class Favor {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String foto;
+    private String descripcion;
+    private String direccion;
     @ManyToOne
     @JoinColumn(name = "id_usuario", referencedColumnName = "id")
     private Usuario usuario;
