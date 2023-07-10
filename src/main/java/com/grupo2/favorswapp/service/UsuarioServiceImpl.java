@@ -4,6 +4,8 @@ import com.grupo2.favorswapp.models.Usuario;
 import com.grupo2.favorswapp.repository.UsuarioRepo;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Implementación del servicio UsuarioService
  */
@@ -31,5 +33,15 @@ public class UsuarioServiceImpl implements UsuarioService{
     @Override
     public Usuario validarUsuario(String email, String clave) {
         return usuarioRepo.findByEmailAndClave(email, clave);
+    }
+
+    @Override
+    public List<Usuario> obtenerTodosUsuarios() {
+        return usuarioRepo.findAll();
+    }
+
+    @Override
+    public Usuario obtenerUsuarioPorId(int id) {
+        return usuarioRepo.findById(id).orElse(null);
     }
 }

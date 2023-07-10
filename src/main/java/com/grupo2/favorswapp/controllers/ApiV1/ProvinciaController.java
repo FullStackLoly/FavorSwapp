@@ -1,4 +1,4 @@
-package com.grupo2.favorswapp.controllers;
+package com.grupo2.favorswapp.controllers.ApiV1;
 
 import com.grupo2.favorswapp.models.Favor;
 import com.grupo2.favorswapp.models.Provincia;

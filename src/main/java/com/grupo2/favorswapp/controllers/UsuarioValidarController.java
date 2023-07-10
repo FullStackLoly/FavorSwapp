@@ -6,10 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class UsuarioController {
+public class UsuarioValidarController {
     private final UsuarioService usuarioService;
 
-    public UsuarioController(UsuarioService usuarioService) {
+    public UsuarioValidarController(UsuarioService usuarioService) {
         this.usuarioService = usuarioService;
     }
 
