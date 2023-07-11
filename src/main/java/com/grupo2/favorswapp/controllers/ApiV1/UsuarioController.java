@@ -24,13 +24,17 @@ public class UsuarioController {
     }
 
     @GetMapping("/usuarios/{id}")
-    public Usuario obtenerProvincia(@PathVariable int id){
+    public Usuario UsuarioPorId(@PathVariable int id){
         return usuarioService.obtenerUsuarioPorId(id);
     }
 
     @PostMapping("/usuarios")
-    public void guardarFavor(@RequestBody Usuario usuario){
+    public void guardarUsuario(@RequestBody Usuario usuario){
         System.out.println(usuario);
     }
 
+    @GetMapping("/usuarios/{email}/{clave}")
+    public Usuario obtenerUsuarioPorEmailClave(@PathVariable String email, String clave){
+        return usuarioService.obtenerUsuarioPorEmailClave(email, clave);
+    }
 }

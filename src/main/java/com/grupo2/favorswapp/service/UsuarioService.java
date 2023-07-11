@@ -14,4 +14,5 @@ public interface UsuarioService {
     public Usuario validarUsuario(String email, String clave);
     public List<Usuario> obtenerTodosUsuarios();
     public Usuario obtenerUsuarioPorId(int id);
+    public Usuario obtenerUsuarioPorEmailClave(String email, String clave);
 }
