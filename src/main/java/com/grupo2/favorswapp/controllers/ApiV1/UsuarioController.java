@@ -1,6 +1,5 @@
 package com.grupo2.favorswapp.controllers.ApiV1;
 
-import com.grupo2.favorswapp.models.Favor;
 import com.grupo2.favorswapp.models.Usuario;
 import com.grupo2.favorswapp.service.UsuarioService;
 import org.springframework.web.bind.annotation.*;
@@ -34,7 +33,12 @@ public class UsuarioController {
     }
 
     @GetMapping("/usuarios/{email}/{clave}")
-    public Usuario obtenerUsuarioPorEmailClave(@PathVariable String email, String clave){
+    public Usuario obtenerUsuarioPorEmailClave(
+            @PathVariable String email,
+            @PathVariable String clave){
+        System.out.println("hola");
+        System.out.println("email: "+email);
+        System.out.println("clave: "+clave);
         return usuarioService.obtenerUsuarioPorEmailClave(email, clave);
     }
 }
