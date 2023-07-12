@@ -1,7 +1,6 @@
 package com.grupo2.favorswapp.controllers.ApiV1;
 
 import com.grupo2.favorswapp.models.Favor;
-import com.grupo2.favorswapp.models.Provincia;
 import com.grupo2.favorswapp.service.FavorService;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,8 +27,8 @@ public class FavorController {
     }
 
     @PostMapping("/favores")
-    public void guardarFavor(@RequestBody Favor favor){
-        System.out.println(favor);
+    public Favor guardarFavor(@RequestBody Favor favor){
+        return favorService.guardarFavor(favor);
     }
 
 }

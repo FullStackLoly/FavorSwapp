@@ -3,8 +3,6 @@ package com.grupo2.favorswapp.models;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
-
 /**
  * Modelo de la tabla favores
  */
@@ -18,7 +16,7 @@ public class Favor {
     private int id;
     private String foto;
     private String descripcion;
-    private String direccion;
+    private String telefono;
     @ManyToOne
     @JoinColumn(name = "id_usuario", referencedColumnName = "id")
     private Usuario usuario;

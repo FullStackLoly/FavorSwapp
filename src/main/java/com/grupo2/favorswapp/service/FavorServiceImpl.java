@@ -22,4 +22,9 @@ public class FavorServiceImpl implements FavorService{
     public Favor obtenerFavor(int id) {
         return favorRepo.findById(id).orElse(null);
     }
+
+    @Override
+    public Favor guardarFavor(Favor favor) {
+        return favorRepo.save(favor);
+    }
 }

@@ -8,6 +8,7 @@ import java.util.List;
  * Interfaz del servicio ProvinciaService
  */
 public interface FavorService {
-    public List<Favor> obtenerTodosFavores();
-    public Favor obtenerFavor(int id);
+    List<Favor> obtenerTodosFavores();
+    Favor obtenerFavor(int id);
+    Favor guardarFavor(Favor favor);
 }
