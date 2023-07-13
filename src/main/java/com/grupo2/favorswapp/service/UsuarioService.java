@@ -15,7 +15,7 @@ public interface UsuarioService {
 
     /**
      * Definición del método que obtiene todos los usuarios de la BBDD
-     * @return
+     * @return List con todos los usuarios.
      */
     List<Usuario> obtenerTodosUsuarios();
 
