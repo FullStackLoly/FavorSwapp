@@ -1,6 +1,8 @@
 package com.grupo2.favorswapp.controllers.ApiV1;
 
+import com.grupo2.favorswapp.models.Direccion;
 import com.grupo2.favorswapp.models.Usuario;
+import com.grupo2.favorswapp.service.DireccionService;
 import com.grupo2.favorswapp.service.UsuarioService;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,9 +12,11 @@ import java.util.List;
 @RequestMapping("/api/v1")
 public class UsuarioController {
     private final UsuarioService usuarioService;
+    private final DireccionService direccionService;
 
-    public UsuarioController(UsuarioService usuarioService) {
+    public UsuarioController(UsuarioService usuarioService, DireccionService direccionService) {
         this.usuarioService = usuarioService;
+        this.direccionService = direccionService;
     }
 
 
@@ -28,8 +32,12 @@ public class UsuarioController {
     }
 
     @PostMapping("/usuarios")
-    public void guardarUsuario(@RequestBody Usuario usuario){
-        System.out.println(usuario);
+    public Usuario guardarUsuario(@RequestBody Usuario usuario){
+        usuario.getDireccion().setId(0);    // Aseguramos que la id de dirección es 0 para crear nueva
+        Direccion direccionRecibida = usuario.getDireccion();
+        Direccion direccionAGuardar = direccionService.guardarDireccion(direccionRecibida); //Guardamos y obtenemos una nueva dirección
+        usuario.setDireccion(direccionAGuardar);    // Añadimos la dirección creada al usuario
+        return usuarioService.guardarUsuario(usuario); // Creamos el nuevo usuario con la nueva dirección.
     }
 
     @GetMapping("/usuarios/{email}/{clave}")

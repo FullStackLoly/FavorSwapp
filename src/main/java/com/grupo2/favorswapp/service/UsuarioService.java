@@ -11,8 +11,9 @@ public interface UsuarioService {
     /**
      * Definición del método que valida un usuario si está registrado, o devuelve nulo si no lo está.
      */
-    public Usuario validarUsuario(String email, String clave);
-    public List<Usuario> obtenerTodosUsuarios();
-    public Usuario obtenerUsuarioPorId(int id);
-    public Usuario obtenerUsuarioPorEmailClave(String email, String clave);
+    Usuario validarUsuario(String email, String clave);
+    List<Usuario> obtenerTodosUsuarios();
+    Usuario obtenerUsuarioPorId(int id);
+    Usuario obtenerUsuarioPorEmailClave(String email, String clave);
+    Usuario guardarUsuario(Usuario usuario);
 }

@@ -49,4 +49,9 @@ public class UsuarioServiceImpl implements UsuarioService{
     public Usuario obtenerUsuarioPorEmailClave(String email, String clave) {
         return usuarioRepo.findByEmailAndClave(email, clave);
     }
+
+    @Override
+    public Usuario guardarUsuario(Usuario usuario) {
+        return usuarioRepo.save(usuario);
+    }
 }
