@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-07-2023 a las 00:15:41
+-- Tiempo de generación: 19-07-2023 a las 01:04:31
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -64,7 +64,13 @@ INSERT INTO `direcciones` (`id`, `direccion`, `id_provincia`) VALUES
 (18, 'Doctor Giménez Canga 1', '04'),
 (19, 'Doctor Gregorio Marañón 41', '04'),
 (20, 'Martínez Oña 32', '04'),
-(21, 'Elena Lázaro 65', '04');
+(21, 'Elena Lázaro 65', '04'),
+(22, 'Av de Europa 55', '03'),
+(23, 'Av de Gijón 12', '03'),
+(24, 'Av de Federico Mayo 63', '03'),
+(25, 'Av de España 55', '05'),
+(26, 'Av de Portugal 14', '05'),
+(27, 'Bajada la Losa 22', '05');
 
 -- --------------------------------------------------------
 
@@ -91,9 +97,9 @@ CREATE TABLE `favores` (
 
 INSERT INTO `favores` (`id`, `foto`, `descripcion`, `telefono`, `id_usuario`, `fumar`, `internet`, `mascota`, `climatizacion`, `adaptado_movilidad_reducida`) VALUES
 (1, 'https://img.freepik.com/psd-gratis/vista-frontal-habitacion-cama-moderna-maqueta-mesas-noche-madera_176382-1962.jpg?w=740&t=st=1688553891~exp=1688554491~hmac=18de766296199b91a3f1682f85f965a56d15270390', 'Habitacion 1 cama', '656112233', 1, 1, 0, 0, 0, 0),
-(2, 'https://img.freepik.com/vector-gratis/plantilla-fondo-interior-dormitorio-dibujos-animados-acogedora-habitacion-moderna-luz-manana_33099-171.jpg?w=740&t=st=1688639593~exp=1688640193~hmac=cee8e03eb23fc', 'Habitacion 2 camas', '656223344', 2, 0, 1, 0, 0, 0),
-(3, 'https://img.freepik.com/vector-premium/interior-dormitorio-accesorios-muebles-objetos-cotidianos_200075-1638.jpg?w=740', 'Habitacion amplia', '656123456', 3, 0, 0, 1, 0, 0),
-(4, 'https://img.freepik.com/vector-premium/interior-dormitorio-estilo-isometrico_171867-143.jpg', 'Ventanas al exterior', '656654321', 4, 0, 0, 0, 1, 0),
+(2, 'https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitacion 2 camas', '656223344', 2, 0, 1, 0, 0, 0),
+(3, 'https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitacion amplia', '656123456', 3, 0, 0, 1, 0, 0),
+(4, 'https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=600', 'Ventanas al exterior', '656654321', 4, 0, 0, 0, 1, 0),
 (5, 'https://as2.ftcdn.net/v2/jpg/06/04/78/57/1000_F_604785708_kqaYnWtWljIwwGIpCDH0KZ2j2x2vIyW0.jpg', 'Habitación doble', '656123212', 5, 0, 0, 0, 0, 1),
 (6, 'https://as1.ftcdn.net/v2/jpg/06/13/87/90/1000_F_613879084_2Jw0QmdGM7NNZILC8xS5Y048D42ybHar.jpg', 'habitación interior', '656445566', 6, 1, 0, 0, 0, 1),
 (7, 'https://d2j6dbq0eux0bg.cloudfront.net/images/28115101/2965728341.jpg', 'Habitación y salón', '656778899', 7, 0, 0, 1, 0, 1),
@@ -110,7 +116,13 @@ INSERT INTO `favores` (`id`, `foto`, `descripcion`, `telefono`, `id_usuario`, `f
 (18, 'https://images.pexels.com/photos/1374125/pexels-photo-1374125.jpeg?auto=compress&cs=tinysrgb&w=600', 'Trastero incluido', '623456789', 18, 1, 0, 1, 0, 0),
 (19, 'https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&w=600', '2 habitaciones', '619123456', 19, 1, 1, 1, 0, 1),
 (20, 'https://images.pexels.com/photos/1879061/pexels-photo-1879061.jpeg?auto=compress&cs=tinysrgb&w=600', 'Soleada y amplia', '634564567', 20, 0, 0, 0, 0, 0),
-(21, 'https://images.pexels.com/photos/1571450/pexels-photo-1571450.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación tranquila', '621234567', 21, 1, 0, 1, 0, 1);
+(21, 'https://images.pexels.com/photos/1571450/pexels-photo-1571450.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación tranquila', '621234567', 21, 1, 0, 1, 0, 1),
+(22, 'https://images.pexels.com/photos/6782567/pexels-photo-6782567.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación exterior', '656789123', 22, 1, 0, 1, 0, 1),
+(23, 'https://images.pexels.com/photos/3182841/pexels-photo-3182841.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación interior', '622345678', 23, 0, 0, 1, 0, 0),
+(24, 'https://images.pexels.com/photos/3659683/pexels-photo-3659683.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación de 1 cama', '645678912', 24, 0, 0, 0, 0, 0),
+(25, 'https://images.pexels.com/photos/3883854/pexels-photo-3883854.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación de 2 camas', '623456789', 25, 1, 1, 1, 1, 1),
+(26, 'https://images.pexels.com/photos/2029719/pexels-photo-2029719.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación exterior', '667891234', 26, 0, 0, 0, 0, 0),
+(27, 'https://images.pexels.com/photos/2029698/pexels-photo-2029698.jpeg?auto=compress&cs=tinysrgb&w=600', 'Habitación con terraza', '624567891', 27, 1, 1, 0, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -226,7 +238,13 @@ INSERT INTO `usuarios` (`id`, `nombre`, `apellido1`, `apellido2`, `telefono`, `f
 (18, 'Martina', 'González', 'Fernández', '623456789', '1953-04-06 23:00:00', 18, 'magofe@gmail.com', 'mG234567'),
 (19, 'Hugo', 'Castillo', 'Iglesias', '619123456', '1953-03-17 23:00:00', 19, 'hucai@gmail.com', 'hC345678'),
 (20, 'Sofía', 'Fernández', 'López', '634564567', '1953-03-19 23:00:00', 20, 'sofelo@gmail.com', 'sF345678'),
-(21, 'Mateo', 'Cortés', 'Garrido', '621234567', '1953-03-26 23:00:00', 21, 'macoga@gmail.com', 'mC456789');
+(21, 'Mateo', 'Cortés', 'Garrido', '621234567', '1953-03-26 23:00:00', 21, 'macoga@gmail.com', 'mC456789'),
+(22, 'María', 'Martínez', 'Sánchez', '656789123', '1952-05-20 23:00:00', 22, 'mamasa@gmail.com', 'mM456789'),
+(23, 'Leo', 'Santos', 'Guerrero', '622345678', '1952-05-04 23:00:00', 23, 'lesagu@gmail.com', 'lS567891'),
+(24, 'Valeria', 'Pérez', 'Gómez', '645678912', '1952-05-29 23:00:00', 24, 'vapego@gmail.com', 'vP567891'),
+(25, 'Lucas', 'Lozano', 'Cano', '623456789', '1947-04-15 23:00:00', 25, 'luloca@gmail.com', 'lL678912'),
+(26, 'Julia', 'Martín', 'Jimenez', '667891234', '1947-03-02 23:00:00', 26, 'jumaji@gmail.com', 'jM678912'),
+(27, 'Manuel', 'Cruz', 'Méndez', '624567891', '1947-03-27 23:00:00', 27, 'macume@gmail.com', 'mC789123');
 
 --
 -- Índices para tablas volcadas
@@ -268,19 +286,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `direcciones`
 --
 ALTER TABLE `direcciones`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `favores`
 --
 ALTER TABLE `favores`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Restricciones para tablas volcadas
