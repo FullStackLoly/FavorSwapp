@@ -75,7 +75,7 @@ INSERT INTO `direcciones` (`id`, `direccion`, `id_provincia`) VALUES
 CREATE TABLE `favores` (
   `id` int(5) NOT NULL,
   `foto` varchar(200) DEFAULT NULL,
-  `descripcion` varchar(20) DEFAULT NULL,
+  `descripcion` varchar(25) DEFAULT NULL,
   `telefono` varchar(9) DEFAULT NULL,
   `id_usuario` int(4) DEFAULT NULL,
   `fumar` tinyint(1) DEFAULT NULL,
